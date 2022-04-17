@@ -13,11 +13,10 @@ class Class_Tree():
             subject, number=code.split(' ')
             att_list=temp.split(' ')
             course_name=att_list[0]
-            units=att_list[-2].replace(['(',')'],'')
+            units=att_list[-2].replace('(','').replace(')','')
             status=att_list[-1]
             new_class=classObjects.Class(subject, number, course_name, units, prereq)
             classes.append(new_class)
-        print(classes)
         class_data.close()
 
 if __name__=="__main__":
