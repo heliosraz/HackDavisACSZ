@@ -8,7 +8,7 @@ class Class:
 #float: float
 
     # type hinting: variableName: type
-    def __init__(self, subject: str, code: str, name:str, numbUnits: int, preReqs: List["Class"]) -> None:
+    def __init__(self, subject: str, code: str, name:str, numbUnits: int, preReqs: str) -> None:
         self.subject = subject
         self.code= code
         self.name=name
