@@ -8,8 +8,10 @@ class Class:
 #float: float
 
     # type hinting: variableName: type
-    def __init__(self, name: str, numbUnits: int, preReqs: List["Class"]) -> None:
-        self.name = name
+    def __init__(self, subject: str, code: str, name:str, numbUnits: int, preReqs: List["Class"]) -> None:
+        self.subject = subject
+        self.code= code
+        self.name=name
         self.numbUnits = numbUnits
         self.preReqs = preReqs
 
@@ -27,11 +29,9 @@ class Class:
     '''
 
     def printClassName(self) -> None:
-        print(f"{self.name}\n{self.numbUnits}\n")
+        print(f"{self.subject+sefl.code}\n{self.numbUnits}\n")
         for x in self.preReqs:
             className = self.preReqs[x].name
             print(className)
 
             #organize by number
-
-
