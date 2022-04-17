@@ -17,15 +17,15 @@ class pdfReader():
         self.text=pageObj.extractText()
         # closing the pdf file object
         pdfFileObj.close()
+        print(self.get_classes(self.text))
 
-    def get_classes(text:str)->result:
+    def get_classes(self, text:str):
         result=[]
         if "UNDERGRADUATE ACADEMIC RECORD" not in text:
              return 'no transcript file given'
-             break
         else:
-            result.append(re.findall(r'[A-Z]{3} {8}[0-9]{3}',text)))
-            result.append(re.findall(r'[A-Z]{3} {7}[0-9]{3}[A-Z]',text)))
+            result.append(re.findall(r'[A-Z]{3} {8}[0-9]{3}',text))
+            result.append(re.findall(r'[A-Z]{3} {7}[0-9]{3}[A-Z]',text))
             return result
 
 def main(path:str):
