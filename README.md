@@ -6,7 +6,7 @@ repository for hackdavis 2022 project ReqCheq✅
 # Inspiration
 ReqCheq started with an idea from student, Sunny Zhou during his struggle of trying to declare a major. Created by students who also struggled through the chaotic nature of finding which classes to take and what major to choose, ReqCheq’s mission is to help students in their journey of self discovery while at college by making the class scheduling side of college easier.
 
-# What we Intended
+# What we intended
 Our program takes a student’s major and courses they have taken, and presents them with a list of courses that they have satisfied the prerequisites to.
 
 # How we built it
@@ -29,5 +29,4 @@ css
 figma
 html
 python
-Try it out
 
